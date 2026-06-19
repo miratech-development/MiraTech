@@ -1,0 +1,138 @@
+.footer-container {
+  background-color: #020712; /* درجة أدكن قليلاً من خلفية الموقع لتحديد الفوتر */
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 80px 80px 30px 80px;
+  margin-top: 60px;
+}
+
+/* توزيع الأعمدة */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* تنسيق عامود الشعار */
+.footer-brand {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  background-color: #0b1d33;
+  color: #00d2ff;
+  border: 1px solid #005f73;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.brand-desc {
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* أزرار السوشيال ميديا الدائرية السفلى */
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  background: transparent;
+  border: 1px solid #2d3748;
+  color: #a0aec0;
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  border-color: #00d2ff;
+  color: #00d2ff;
+  background-color: rgba(0, 210, 255, 0.05);
+}
+
+/* تنسيق أعمدة القوائم والروابط */
+.footer-links-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.col-title {
+  color: #00d2ff; /* اللون الأزرق السماوي للعناوين الفرعية للفوتر */
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.footer-links-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links-col ul li a {
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-links-col ul li a:hover {
+  color: #ffffff;
+}
+
+/* حقوق الملكية في الأسفل */
+.footer-bottom {
+  padding-top: 30px;
+  color: #4a5568;
+  font-size: 13px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* التوافق مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer-container {
+    padding: 60px 40px 30px 40px;
+  }
+}
