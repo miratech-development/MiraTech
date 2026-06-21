@@ -4,4 +4,30 @@ body {
   background-color: #071834; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
+  
+}
+
+/* =========================
+   Global Dotted Background
+   ========================= */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #0d1117;
+
+  /* Dots */
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.08) 1px,
+    transparent 1px
+  );
+
+  /* Distance between dots */
+  background-size: 24px 24px;
+
+  color: #fff;
+  
 }

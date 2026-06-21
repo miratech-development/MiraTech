@@ -68,3 +68,8 @@
     font-size: 13px;
   }
 }
+
+a {
+  color: inherit; /* يرث اللون من العنصر الأب */
+  text-decoration: none; /* إزالة الخط السفلي الافتراضي */
+}

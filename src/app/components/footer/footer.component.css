@@ -1,8 +1,17 @@
 .footer-container {
-  background-color: #020712; /* درجة أدكن قليلاً من خلفية الموقع لتحديد الفوتر */
-  border-top: 1px solid rgba(255, 255, 255, 0.03);
-  padding: 80px 80px 30px 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 80px 80px 30px;
   margin-top: 60px;
+
+  /* Slightly different background */
+  background: linear-gradient(
+    180deg,
+    rgba(18, 24, 35, 0.65) 0%,
+    rgba(11, 17, 26, 0.95) 100%
+  );
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 /* توزيع الأعمدة */
