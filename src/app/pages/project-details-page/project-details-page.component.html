@@ -1,0 +1,19 @@
+<div class="page-layout" style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
+  
+  <a routerLink="/projects" style="color: #00d2ff; text-decoration: none; display: inline-block; margin-bottom: 2rem;">
+    ← Back to Projects
+  </a>
+
+  <app-project-details
+    *ngIf="selectedProject; else fallbackTemplate" 
+    [project]="selectedProject">
+  </app-project-details>
+
+  <ng-template #fallbackTemplate>
+    <div style="color: white; text-align: center; margin-top: 4rem;">
+      <h2>Project Not Found</h2>
+      <p>We couldn't find the project details you are looking for.</p>
+    </div>
+  </ng-template>
+
+</div>
